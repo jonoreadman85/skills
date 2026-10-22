@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hiring Assessment"
+  short_description: "Assess CV evidence and prepare structured interviews"
+  default_prompt: "Use $hiring-assessment to assess these candidates against the role requirements and prepare evidence-based interview recommendations."
