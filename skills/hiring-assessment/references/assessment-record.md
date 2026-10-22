@@ -21,6 +21,17 @@ Review limitation: recruiter overview was visible before the CV review; this is 
 
 **Recruiter reconciliation:** overview says there is no incident experience. That conflicts with the cited CV example; investigate depth rather than repeat the overview's conclusion.
 
+## Separate activities, attribution and uncertainty
+
+Synthetic source S002, Experience / ExampleCo: “Implemented queue consumers; the team reduced failures by 40%. Helped migrate billing APIs.”
+
+- “Implemented queue consumers”: **described delivery**. The activity is specific even though design ownership, release responsibility and outcome are unknown.
+- “The team reduced failures by 40%”: a separately attributed, unverified **team outcome**. Ask about baseline, measurement and the person's contribution; do not label it personal ownership.
+- “Helped migrate billing APIs”: **unclear** personal activity. Ask which task or decision was theirs. This differs from no migration statement being present.
+- If a confirmed second version says 15% instead of 40%, preserve both source references and ask whether periods or measures differ. Do not choose one figure or infer dishonesty.
+
+If another page cannot be read, absence statements apply only to the reviewed sections. Source coverage is recorded separately from the evidence labels above.
+
 ## Candidate-level conclusion
 
 **Role suitability:** relevant evidence worth validating at interview.
