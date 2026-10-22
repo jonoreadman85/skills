@@ -30,7 +30,9 @@ Inputs can be attachments, pasted material, accessible files or supported connec
 
 Edit the repository copy and review changes before sharing them. Keep each skill's entry point concise, with substantial role-specific guidance in linked references. Record source and revision information when updating a playbook. Do not present pilot proposals as adopted departmental policy.
 
-Consumers should update or reinstall their installed copies after changes are merged. Repository edits do not automatically refresh every colleague's installation. Record the playbook revision in generated interview packs so earlier decisions remain interpretable.
+Consumers need to refresh their installed copies after changes are merged. Repository edits do not automatically refresh every colleague's installation. Record the playbook revision in generated interview packs so earlier decisions remain interpretable.
+
+The hiring skill's [maintenance workflow](skills/hiring-assessment/references/maintenance.md) distinguishes the source checkout from installed copies. Updates are prepared in this repository, published within the authorised scope, and then applied to installations after checking for local edits. The installer refuses an existing destination; preserve local differences instead of deleting a skill to force reinstallation.
 
 ## Scope of this first version
 

@@ -13,7 +13,7 @@ Use inputs already accessible in the conversation, attachments, local files or c
 
 Identify the target role and level, requirements, candidate material and applicable interview playbook. Reuse saved role briefs when available. Ask only for missing information that materially changes the assessment. If the role is unknown, extract candidate evidence but defer suitability and level conclusions. With an incomplete brief, identify assumptions and avoid presenting a provisional comparison as a completed assessment.
 
-Read [the playbook index](references/playbooks.md) when selecting or updating interview guidance. The bundled AI engineering pilot applies only to its stated scope or an explicit user choice. For other roles, use supplied guidance or propose a clearly labelled structure. Never silently apply engineering competencies, senior expectations or Principal people-management duties across all vacancies.
+Read [the playbook index](references/playbooks.md) when selecting or updating interview guidance. Load only the selected playbook; CV evidence extraction alone does not require the exercise bank. The bundled AI engineering pilot applies only to its stated scope or an explicit user choice. For other roles, use supplied guidance or propose a clearly labelled structure. Never silently apply engineering competencies, senior expectations or Principal people-management duties across all vacancies.
 
 Separate mandatory eligibility from desirable experience and learnable tools. Keep role suitability, demonstrated level, practical role interest and eligibility distinct. Do not invent company policy or waive a stated requirement. Surface unresolved eligibility for the appropriate human determination.
 
@@ -39,6 +39,8 @@ Reconcile recruiter conclusions against the originals after forming the evidence
 
 Provide a concise role-specific recommendation for human review, strongest evidence, material gaps, level evidence and interview probes. Use references such as CV page/section or workbook sheet/cell. Do not hide essential gaps behind a numerical total or rank candidates by keyword density. Explain complementary team strengths without pretending an individual meets a requirement they have not demonstrated.
 
+For a candidate or batch assessment, read [the compact assessment example](references/assessment-record.md). Preserve the requirement-to-evidence-to-probe relationship; adapt the presentation to the requested output. An unreadable CV is a source limitation, not a candidate weakness: try an available extraction alternative, identify inaccessible sections and defer conclusions that depend on them.
+
 ## Prepare interviews
 
 Load the selected playbook and record its version/source in the interview pack. Preserve common competencies, core prompts, time constraints and scoring anchors for the same role and level. Tailor the prior-work discussion and controlled follow-ups to candidate claims and gaps; do not quietly raise or lower the assessment standard.
@@ -57,7 +59,9 @@ Summarise observations, support given, uncertainties and a reasoned recommendati
 
 ## Update a playbook
 
-When supplied a revised source, compare it with the bundled reference and source register. Identify changed timings, criteria, exercises, AI rules and decision guidance. Update only affected references; change this skill's method only when the method itself changes. Preserve proposal/pilot/adopted status accurately and record unresolved conflicts.
+Before editing, read [the maintenance workflow](references/maintenance.md). It distinguishes the authoritative source checkout, installed copies and candidate outputs. Do not load this workflow for ordinary CV assessment or interview preparation.
+
+When supplied a revised source, compare it with the bundled reference and source register. Identify changed timings, criteria, exercises, AI rules and decision guidance. Update only affected references; change this skill's method only when the method itself changes. Preserve proposal/pilot/adopted status accurately and record unresolved conflicts. A request to reconcile documents does not by itself establish that a changed policy has been approved: apply explicitly adopted changes, and keep proposed or conflicting changes pending until their intended status is clear.
 
 Record the new source name or accessible link, version/date, relevant sections or slides and content hash for local files. Advance the playbook revision and summarise substantive changes. Do not claim to have checked an inaccessible source. A bundled snapshot works without the original slides; it does not synchronise itself. Existing candidate packs retain their recorded version until explicitly refreshed.
 
