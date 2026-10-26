@@ -44,7 +44,11 @@ Reconcile recruiter conclusions against the originals after forming the evidence
 
 Provide a concise role-specific recommendation for human review, strongest evidence, material gaps, level evidence and interview probes. Use references such as CV page/section or workbook sheet/cell. Do not hide essential gaps behind a numerical total or rank candidates by keyword density. Explain complementary team strengths without pretending an individual meets a requirement they have not demonstrated.
 
+Use the user's requested decision labels and output format. Keep routine validation within the agreed assessment stage rather than adding a screening stage. For a second opinion, identify the material uncertainty, the appropriate reviewer role and the decision needed; do not invent a named reviewer or contact them.
+
 For a candidate or batch assessment, read [the compact assessment example](references/assessment-record.md). Preserve the requirement-to-evidence-to-probe relationship; adapt the presentation to the requested output. Scope absence statements to the material actually reviewed and defer conclusions that depend on inaccessible content.
+
+When a recommendation changes later in the conversation or a draft reply, reconcile affected saved outputs within the authorised task scope. Preserve the earlier rationale as revision history or mark it superseded, and identify which version is current. If an earlier report cannot be updated, explicitly flag it as outdated; do not claim it was synchronised. A shorter restatement alone is not a changed decision.
 
 ## Prepare interviews
 
