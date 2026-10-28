@@ -1,16 +1,27 @@
 # Department skills
 
-Reusable Codex skills maintained by Jonathan Readman for sharing across the department. Each skill is a self-contained folder under `skills/`. Candidate data and working assessment outputs stay outside this repository.
+Reusable Codex skills maintained by Jonathan Readman for sharing across the department. Each skill is a self-contained folder under `skills/`. Candidate data, private conversation history and working assessment outputs stay outside this repository.
 
 ## Available skills
 
 - [Hiring assessment](skills/hiring-assessment/SKILL.md): assess CVs against role requirements, prepare interviews, review interview evidence and maintain playbooks. Works across roles and levels. Repository context is optional. Includes an AI engineering pilot snapshot; that snapshot is not universal hiring policy.
+- [Review prompting](skills/review-prompting/SKILL.md): review prompting across accessible coding-agent conversations, distinguish user choices from agent or tool failures, and teach improvements with evidence, rewrites and practice exercises. Reports history coverage and supports single-prompt trials.
 
 ## Install and use
 
 In Codex, ask the skill installer:
 
 > Use $skill-installer to install skills/hiring-assessment from jonoreadman85/skills.
+
+For the prompting review skill:
+
+> Use $skill-installer to install skills/review-prompting from jonoreadman85/skills.
+
+> $review-prompting Review my accessible Codex conversations from the past month. Explain coverage, identify the most consequential prompting patterns and give me practical lessons.
+
+> $review-prompting Review this prompt as a single-message trial. Do not infer recurring habits or historical outcomes.
+
+The prompting skill uses available conversation tools, readable local transcripts or supplied exports. Installation does not grant access to history or guarantee coverage of all machines and hosts. It does not modify reviewed conversations or publish their contents.
 
 Private repository installation requires GitHub access. Installing a skill does not grant access to candidate documents or source slides. After installation, start a new chat if the skill is not yet listed.
 

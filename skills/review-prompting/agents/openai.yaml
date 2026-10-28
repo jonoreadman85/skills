@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Prompting"
+  short_description: "Review prompting habits and practise better prompts"
+  default_prompt: "Use $review-prompting to review my accessible coding-agent conversations, identify evidence-backed improvements, and teach me how to apply them."
