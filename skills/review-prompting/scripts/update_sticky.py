@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """Create/update one prompting reminder; keep user state outside the skill package."""
 import argparse
-from contextlib import contextmanager
 from datetime import datetime, timezone
 import hashlib
 import json
-import os
 from pathlib import Path
 import subprocess
 import sys
 from urllib.parse import urlparse
+
+from practice_store import state_lock, update_current, validate_habits
 
 TITLE = 'BEFORE I PROMPT'
 CUE = 'Open chat. Pause. Choose one habit.'
@@ -86,19 +86,10 @@ def render(data):
     if not isinstance(data, dict):
         raise ValueError('Habits JSON must be an object.')
     habits = data.get('habits')
-    if not isinstance(habits, list) or len(habits) != 3:
-        raise ValueError('Provide exactly three habits.')
+    validate_habits(habits)
     lines = [TITLE, '']
     for i, habit in enumerate(habits, 1):
-        if not isinstance(habit, dict):
-            raise ValueError('Each habit must have title and action strings.')
         title, action = habit.get('title'), habit.get('action')
-        if not isinstance(title, str) or not isinstance(action, str):
-            raise ValueError('Each habit must have title and action strings.')
-        if not title.strip() or not action.strip() or any(c in title + action for c in '\r\n'):
-            raise ValueError('Use nonempty, single-line habit titles and actions.')
-        if len(title) > 60 or len(action) > 140:
-            raise ValueError('Keep titles under 61 characters and actions under 141.')
         lines.extend([f'{i}. {title.strip()}', action.strip(), ''])
     lines.append(CUE)
     link = data.get('report_url')
@@ -111,21 +102,6 @@ def render(data):
             raise ValueError('The file URI must be absolute.')
         lines.extend(['', 'Full list and report:', link])
     return '\n'.join(lines)
-
-
-@contextmanager
-def state_lock(directory):
-    directory.mkdir(parents=True, exist_ok=True, mode=0o700)
-    lock = directory / 'sticky.lock'
-    try:
-        fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
-    except FileExistsError:
-        raise RuntimeError('Another updater is running or left a lock; inspect it before retrying.')
-    try:
-        os.close(fd)
-        yield
-    finally:
-        lock.unlink()
 
 
 def main():
@@ -148,8 +124,10 @@ def main():
     if sys.platform != 'darwin':
         print(json.dumps({'status':'unsupported_platform', 'text':text}))
         return 2
-    with state_lock(state_dir):
+    with state_lock(state_dir, 'sticky.lock'):
         previous = json.loads(state_file.read_text()) if state_file.exists() else {}
+        # Practice identity persists independently of whether desktop access succeeds.
+        data = dict(data, habits=update_current(state_dir, data['habits']))
         payload = {'title':TITLE, 'cue':CUE, 'text':text, 'expected':previous.get('last_text'), 'checkOnly':False}
         # Inspect once before writing. A missing permission or duplicate note stops this run.
         check = dict(payload, checkOnly=True)
@@ -173,10 +151,7 @@ def main():
         if receipt.get('text') != text:
             raise RuntimeError('The saved note text was not verified; state was not advanced.')
         updated_at = datetime.now(timezone.utc).isoformat()
-        introduced = {(h['title'], h['action']): h.get('introduced_at_utc', updated_at)
-                      for h in previous.get('habits', [])}
-        habits = [dict(h, introduced_at_utc=introduced.get((h['title'], h['action']), updated_at))
-                  for h in data['habits']]
+        habits = data['habits']
         state = {'schema_version':1, 'setup_complete':bool(receipt.get('floating')),
                  'last_text':text, 'text_sha256':hashlib.sha256(text.encode()).hexdigest(),
                  'last_updated_utc':updated_at,

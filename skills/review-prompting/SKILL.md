@@ -11,7 +11,7 @@ Help the user reach satisfactory results by assessing their decisions throughout
 
 For a first full review, desktop reminder setup, or weekly progress review, read [practice setup and weekly reviews](references/practice-workflow.md). A skill installation copies the package; it does not execute setup or register a schedule. After the first full review, create or adopt one macOS sticky note with three habits and record setup in private per-user state. Respect a user who declines desktop setup. A single-prompt trial or read-only critique does not initialise the desktop or create persistent state.
 
-For weekly reviews, use the previous complete Monday-to-Sunday week in the configured local timezone. Report task achievements and evidence of applying the previous habits separately. Preserve source coverage and honest uncertainty. A Monday schedule is a separate, explicitly configured local task; never claim it exists merely because the skill describes one.
+For weekly reviews, use the previous complete Monday-to-Sunday week in the configured local timezone. Capture the week's original habit baseline with the practice-store helper before assessing or updating anything; use that frozen baseline for every rerun. Preserve habit IDs and introduction dates through wording changes. Report task achievements and evidence of applying the previous habits separately. Preserve source coverage and honest uncertainty. A Monday schedule is a separate, explicitly configured local task; never claim it exists merely because the skill describes one.
 
 ## Establish evidence and coverage
 

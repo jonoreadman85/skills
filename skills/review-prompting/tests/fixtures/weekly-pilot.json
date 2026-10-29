@@ -1,0 +1,17 @@
+{
+  "description": "Synthetic raw conversations for a bounded weekly review pilot; not user history.",
+  "events": [
+    {"id":"old-1","chat":"older-chat","source":"user","at":"2026-10-25T12:00:00+00:00","role":"assistant","text":"The earlier release is complete."},
+    {"id":"conversion-0","chat":"conversion-chat","event":0,"source":"user","at":"2026-10-27T10:00:00+00:00","role":"user","text":"That conversion is wrong. Fix it."},
+    {"id":"name-1","chat":"naming-chat","event":1,"source":"user","at":"2026-10-29T10:00:00+00:00","role":"user","text":"Those names feel too whimsical. Try recognisable names with the weight of Apollo. Give me three options."},
+    {"id":"name-2","chat":"naming-chat","event":2,"source":"user","at":"2026-10-29T10:01:00+00:00","role":"assistant","text":"Here are three options: Apollo, Atlas and Orion. No name has been selected or cleared for use."},
+    {"id":"config-1","chat":"config-chat","event":1,"source":"user","at":"2026-10-30T09:00:00+00:00","role":"user","text":"Replace the previous limit with 20 requests per second per tenant. Recalculate the burst limits and show the updated configuration. Run its tests; do not deploy."},
+    {"id":"config-2","chat":"config-chat","event":2,"source":"user","at":"2026-10-30T09:02:00+00:00","role":"assistant","text":"I updated the per-tenant rate and burst configuration. I will run the tests."},
+    {"id":"config-3","chat":"config-chat","event":3,"source":"user","at":"2026-10-30T09:03:00+00:00","role":"tool","text":"Rate-limit configuration tests: 6 passed. Deployment was not invoked."},
+    {"id":"conversion-1","chat":"conversion-chat","event":1,"source":"user","at":"2026-10-31T11:00:00+00:00","role":"user","text":"I cannot follow that overlap. Show the original time, UTC offset, conversion and the intersection with the interview window before changing it."},
+    {"id":"conversion-2","chat":"conversion-chat","event":2,"source":"user","at":"2026-10-31T11:01:00+00:00","role":"assistant","text":"The explicit calculation confirms the original result. No correction is needed."},
+    {"id":"deploy-1","chat":"deployment-chat","event":1,"source":"user","at":"2026-11-01T16:00:00+00:00","role":"assistant","text":"Deployment is complete."},
+    {"id":"agent-1","chat":"subagent-chat","event":1,"source":"subagent","at":"2026-11-01T16:01:00+00:00","role":"assistant","text":"I think the deployment probably succeeded."},
+    {"id":"name-1","chat":"naming-fork","event":1,"source":"user","at":"2026-10-29T10:00:00+00:00","role":"user","text":"Those names feel too whimsical. Try recognisable names with the weight of Apollo. Give me three options."}
+  ]
+}

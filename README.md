@@ -29,6 +29,8 @@ On the first full review, the skill creates or adopts one **Before I prompt** st
 
 For Monday scheduling, configure a local task with the user's timezone, history access, private practice directory and report destination. Scheduling is separate from installing the skill; the computer and desktop app must be running, with an available GUI session for the sticky update. See [practice setup and weekly reviews](skills/review-prompting/references/practice-workflow.md). The package includes a calendar-week helper and a guarded sticky updater, not a background service.
 
+Weekly reviews capture their original habit baseline before assessment. Stable habit IDs preserve introduction dates through wording changes; reruns reuse the captured baseline and report rather than assessing the week against newly selected habits. Report history is retained independently of desktop-update success.
+
 Private repository installation requires GitHub access. Installing a skill does not grant access to candidate documents or source slides. After installation, start a new chat if the skill is not yet listed.
 
 Example requests:

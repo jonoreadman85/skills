@@ -11,6 +11,7 @@ import unittest
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT/'scripts'))
 
 
 def load(name):
@@ -91,7 +92,7 @@ class StickyTests(unittest.TestCase):
                 self.assertEqual(saved['habits'][0]['introduced_at_utc'], introduced_at)
             self.assertEqual(calls[1]['expected'], None)
             self.assertEqual(calls[3]['expected'], text)
-            self.assertEqual(len(list(state.iterdir())), 1)
+            self.assertEqual({p.name for p in state.iterdir()}, {'sticky-state.json', 'practice-state.json'})
             self.assertTrue(json.loads((state/'sticky-state.json').read_text())['setup_complete'])
 
     def test_new_note_is_sized_and_reverified_before_setup_is_recorded(self):
