@@ -5,7 +5,7 @@ Reusable Codex skills maintained by Jonathan Readman for sharing across the depa
 ## Available skills
 
 - [Hiring assessment](skills/hiring-assessment/SKILL.md): assess CVs against role requirements, prepare interviews, review interview evidence and maintain playbooks. Works across roles and levels. Repository context is optional. Includes an AI engineering pilot snapshot; that snapshot is not universal hiring policy.
-- [Review prompting](skills/review-prompting/SKILL.md): review prompting across accessible coding-agent conversations, distinguish user choices from agent or tool failures, and teach improvements with evidence, rewrites and practice exercises. Reports history coverage and supports single-prompt trials.
+- [Review prompting](skills/review-prompting/SKILL.md): review prompting across accessible coding-agent conversations, distinguish user choices from agent or tool failures, and teach improvements with evidence, rewrites and practice exercises. Supports single-prompt trials, first-use macOS sticky-note setup and weekly achievement/practice reports.
 
 ## Install and use
 
@@ -22,6 +22,12 @@ For the prompting review skill:
 > $review-prompting Review this prompt as a single-message trial. Do not infer recurring habits or historical outcomes.
 
 The prompting skill uses available conversation tools, readable local transcripts or supplied exports. Installation does not grant access to history or guarantee coverage of all machines and hosts. It does not modify reviewed conversations or publish their contents.
+
+On the first full review, the skill creates or adopts one **Before I prompt** sticky note on macOS and keeps setup state outside the package. Single-prompt trials and read-only reviews skip desktop setup. Accessibility and Automation access may be needed; a blocked desktop update does not prevent the report. Installation itself runs no setup or scheduler hook.
+
+> $review-prompting Run my weekly review for the previous complete Monday-to-Sunday week. Report evidenced achievements, assess my previous three habits, and update my existing sticky note. Keep the report concise and explain coverage.
+
+For Monday scheduling, configure a local task with the user's timezone, history access, private practice directory and report destination. Scheduling is separate from installing the skill; the computer and desktop app must be running, with an available GUI session for the sticky update. See [practice setup and weekly reviews](skills/review-prompting/references/practice-workflow.md). The package includes a calendar-week helper and a guarded sticky updater, not a background service.
 
 Private repository installation requires GitHub access. Installing a skill does not grant access to candidate documents or source slides. After installation, start a new chat if the skill is not yet listed.
 

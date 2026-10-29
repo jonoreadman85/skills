@@ -1,11 +1,17 @@
 ---
 name: review-prompting
-description: Review how a user prompts a coding agent across accessible conversations, identify evidence-backed improvements, and teach better prompting through contextual rewrites and exercises. Use for retrospective prompting reviews or a requested single-prompt trial, not ordinary code review or unsolicited critique during implementation.
+description: Review prompting across accessible coding-agent conversations, teach evidence-backed improvements, and maintain three practice habits with first-run desktop setup or a weekly progress report. Use for prompting retrospectives, weekly learning reviews or single-prompt trials; not ordinary code review or unsolicited implementation critique.
 ---
 
 # Review prompting
 
 Help the user reach satisfactory results by assessing their decisions throughout a conversation: the initial request, delegation, clarification, corrections, verification and closure. Give candid, specific coaching. Do not reward verbosity, impose a universal prompt template or manufacture weaknesses to sound critical.
+
+## Choose the review mode
+
+For a first full review, desktop reminder setup, or weekly progress review, read [practice setup and weekly reviews](references/practice-workflow.md). A skill installation copies the package; it does not execute setup or register a schedule. After the first full review, create or adopt one macOS sticky note with three habits and record setup in private per-user state. Respect a user who declines desktop setup. A single-prompt trial or read-only critique does not initialise the desktop or create persistent state.
+
+For weekly reviews, use the previous complete Monday-to-Sunday week in the configured local timezone. Report task achievements and evidence of applying the previous habits separately. Preserve source coverage and honest uncertainty. A Monday schedule is a separate, explicitly configured local task; never claim it exists merely because the skill describes one.
 
 ## Establish evidence and coverage
 
@@ -30,12 +36,12 @@ Assess the following only where relevant:
 
 Do not fault a concise prompt for omitting details irrelevant to the task. Iteration is often the appropriate way to discover requirements. More turns, a long duration or an unfinished chat do not alone establish poor prompting. A required approval is not avoidable friction merely because it took another turn.
 
-Classify outcome evidence per task, allowing mixed results within a chat:
+Record task purpose (exploration or execution) separately from outcome evidence. Classify outcomes per task, allowing mixed results within a chat:
 
 - **Verified completion:** Visible evidence supports the relevant completion criteria, such as meaningful test results, inspected output or explicit user acceptance. State what was verified and what remains unverified; acceptance does not prove technical correctness.
 - **Claimed completion:** Completion was asserted without sufficient supporting evidence in the reviewed material.
-- **Unresolved:** An intended result remains open or blocked in the available record. A truncated record has an unknown final outcome; do not equate it with failure.
-- **Intentional exploration:** The goal was learning, comparison or a decision rather than implementation. Assess the requested exploratory result.
+- **Unresolved:** An intended result remains open or blocked in the available record.
+- **Unknown:** The record is incomplete or lacks closure; do not equate it with failure. Exploratory work can also have a verified, claimed, unresolved or unknown outcome.
 
 ## Make defensible findings
 
@@ -63,4 +69,4 @@ Use placeholders for missing facts rather than inventing requirements. Preserve 
 
 For a single-prompt trial, demonstrate the same critique, rewrite and lesson approach, but do not claim recurring habits, actual downstream effects or a historical resolution. If the prompt was supplied or drafted by an assistant, assess the text without attributing its authorship or demonstrated skill to the user.
 
-Keep the review readable: lead with the most consequential finding, disclose coverage, present the priority coaching and state limits on conclusions. Adapt to the user's requested format. Do not save reports, create longitudinal profiles or update the skill automatically unless requested.
+Keep the immediate review readable: show the three practice habits first, with short examples; put detailed reasoning in the requested report. Adapt to the user's requested format. Full-review desktop setup retains only the minimal practice state described in the workflow. Save weekly reports and comparisons when the user requests the weekly workflow; otherwise do not accumulate reports or profiles. Never update the reusable skill automatically from private review findings.
