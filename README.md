@@ -6,12 +6,21 @@ Reusable Codex skills maintained by Jonathan Readman for sharing across the depa
 
 - [Hiring assessment](skills/hiring-assessment/SKILL.md): assess CVs against role requirements, prepare interviews, review interview evidence and maintain playbooks. Works across roles and levels. Repository context is optional. Includes an AI engineering pilot snapshot; that snapshot is not universal hiring policy.
 - [Review prompting](skills/review-prompting/SKILL.md): review prompting across accessible coding-agent conversations, distinguish user choices from agent or tool failures, and teach improvements with evidence, rewrites and practice exercises. Supports single-prompt trials, first-use macOS sticky-note setup and weekly achievement/practice reports.
+- [Guild requirements](skills/guild-requirements/SKILL.md): interview engineers about shared AI platform needs and populate a short Markdown requirement. Includes the Sage AI Guild template and a draft capability catalogue; the catalogue is a starting point, not a committed roadmap.
 
 ## Install and use
 
 In Codex, ask the skill installer:
 
 > Use $skill-installer to install skills/hiring-assessment from jonoreadman85/skills.
+
+For the Guild requirements skill:
+
+> Use $skill-installer to install skills/guild-requirements from jonoreadman85/skills.
+
+> $guild-requirements Help me explain my platform need and complete the requirement template. Ask focused questions and leave unknowns visible.
+
+Supply any existing requirements to check for overlap. The skill gathers and drafts input; the platform team determines priority and readiness to build. The package has not yet been piloted with contributors.
 
 For the prompting review skill:
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guild Requirements"
+  short_description: "Turn engineering needs into concise Guild requirements"
+  default_prompt: "Use $guild-requirements to interview me about my platform need and populate the Guild requirement template from my answers."
