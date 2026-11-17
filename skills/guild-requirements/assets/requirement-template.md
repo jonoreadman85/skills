@@ -1,5 +1,3 @@
-![Sage AI Guild](sage-ai-guild-banner.svg)
-
 # Sage AI Guild requirement
 
 For a new requirement, replace the prompts with short answers. AI can populate this document from your answers. Review it before sharing and leave unknowns visible. When refining an existing requirement, preserve its recorded details and decisions and propose amendments separately.

@@ -7,7 +7,7 @@ description: Interview a Sage engineer about a shared AI platform need and progr
 
 Turn the contributor's explanation into a short requirement the platform team can assess and refine for implementation. For a new submission, read [the requirement template](assets/requirement-template.md), use its five numbered sections and leave platform team notes for internal completion. For an existing requirement, preserve its recorded information and propose amendments separately.
 
-Markdown is the standard output format. Preserve the Sage AI Guild title, document metadata and supplied branded header. When saving a submission to another folder, copy the header SVG alongside it and adjust the relative image link so the document remains portable. Keep the content readable in renderers that do not show SVG images; the text title identifies the document independently.
+Markdown is the standard output format. Keep the Sage AI Guild text title and document metadata. Each generated requirement should be a single Markdown file.
 
 Use [the capability catalogue](references/capability-areas.md), or the same catalogue in the supplied contribution guide, to classify the need. These draft categories do not replace checking actual requirement submissions.
 
