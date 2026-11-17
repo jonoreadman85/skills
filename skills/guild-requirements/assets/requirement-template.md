@@ -2,7 +2,7 @@
 
 # Sage AI Guild requirement
 
-Use one document per distinct requirement. Replace the prompts with short answers. AI can interview you and populate this document; review its draft before sharing. Write Unknown where needed.
+For a new requirement, replace the prompts with short answers. AI can populate this document from your answers. Review it before sharing and leave unknowns visible. When refining an existing requirement, preserve its recorded details and decisions and propose amendments separately.
 
 **Title:** [The outcome you need]
 

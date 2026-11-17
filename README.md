@@ -20,7 +20,7 @@ For the Guild requirements skill:
 
 > $guild-requirements Help me explain my platform need and complete the requirement template. Ask focused questions and leave unknowns visible.
 
-Supply any existing requirements to check for overlap. The skill gathers and drafts input; the platform team determines priority and readiness to build. The package has not yet been piloted with contributors.
+Supply any existing requirements to check for overlap. Refinements preserve recorded decisions and present proposed amendments separately. The skill checks readiness for review; the platform team determines priority and readiness to build. A simulated trial on 17 November 2026 covered a vague request, a complete submission, conflicting overlapping needs and a requirement with recorded decisions. This is not a pilot with real contributors.
 
 For the prompting review skill:
 

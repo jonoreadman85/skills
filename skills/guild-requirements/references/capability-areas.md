@@ -2,6 +2,8 @@
 
 These ten areas summarise the kickoff deck draft v0. The expected value and questions below are prompts for review. The proposed mechanisms remain subject to requirements and architectural assessment; these entries are not complete or accepted specifications.
 
+See the [working decisions and source record](guild-context.md) for confirmed direction and provisional responsibilities.
+
 ### AREA 01 Work intake and orchestration
 
 **Purpose:** Coordinate an authorised task through a traceable workflow, including interruption and failure handling.
