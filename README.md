@@ -22,6 +22,8 @@ For the Guild requirements skill:
 
 Supply any existing requirements to check for overlap. Refinements preserve recorded decisions and present proposed amendments separately. The skill checks readiness for review; the platform team determines priority and readiness to build. A simulated trial on 17 November 2026 covered a vague request, a complete submission, conflicting overlapping needs and a requirement with recorded decisions. This is not a pilot with real contributors.
 
+First use includes a short introduction and at most two short questions before the first draft. A complete request can be drafted immediately; “draft it now” skips questions. Missing details stay visible and further refinement is optional.
+
 For the prompting review skill:
 
 > Use $skill-installer to install skills/review-prompting from jonoreadman85/skills.
